@@ -3,6 +3,30 @@
         margin: 0px;
     }
 
+    .form-header {
+        font-size: 35px;
+        font-weight: bolder;
+    }
+
+    .section2-text-head {
+        font-size: 30px;
+    }
+
+    .section2-text-para {
+        font-size: 20px;
+    }
+
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .header-text {
+        font-size: 30px;
+    }
+
     .bold {
         font-weight: bold;
     }
@@ -37,7 +61,6 @@
 
     .img-full {
         width: 100%;
-
     }
 
     .primary-text-blue {
@@ -60,6 +83,7 @@
         width: 100%;
     }
 
+
     .text-div {
         padding-left: 15px;
         padding-right: 15px;
@@ -67,19 +91,29 @@
     }
 
     .text-div__para1 {
-        font-size: 18px;
+        font-size: 35px;
         font-weight: bolder;
+        margin-top: 50px;
+        line-height: 30px;
     }
 
     .text-div__para2 {
-        font-size: 16px;
+        font-size: 25px;
         font-weight: bold;
+        margin-bottom: 50px;
+        line-height: 30px;
     }
 
     /* End of top header */
     .section-2-div {
         padding-left: 15px;
         padding-right: 15px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 0px;
+        align-items: center;
     }
 
     /* Start of Additional features */
@@ -89,16 +123,24 @@
         padding-left: 15px;
         padding-right: 15px;
         overflow: hidden;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .additional-features-img {
-        height: 50px;
-        padding-right: 10px;
+        height: 100px;
+        padding-right: 30px;
+    }
+
+    .additional-features-head {
+        font-size: 30px;
+        font-weight: bolder;
     }
 
     .additional-features-para {
         word-wrap: break-word;
         font-weight: bold;
+        font-size: 20px;
     }
 
     /* End of  Additional features*/
@@ -114,6 +156,7 @@
         border-radius: 0px;
         border: 1px solid #000;
         height: 30px;
+        padding: 0px 5px;
     }
 
     .form-div {
@@ -122,7 +165,8 @@
     }
 
     .form-space {
-        padding: 0px 5px;
+        width: 100%;
+        margin-right: 10px;
     }
 
     /* end of form styling */
@@ -133,7 +177,8 @@
         display: flex;
         flex-wrap: nowrap;
         overflow-x: auto;
-        padding: 30px;
+        padding: 30px 0px;
+        justify-content: center;
     }
 
     .card {
@@ -141,9 +186,146 @@
         height: 200px;
         width: 300px;
         border: 1px solid #000;
+        border-radius: 7px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
+    .hideBigScreen {
+        display: block;
+    }
+
+    .hideSmallScreen {
+        display: none;
+    }
+
+    .button-div {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .submit-button {
+        background-color: red;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        padding: 10px 15px;
+        border-radius: 15px;
+    }
+
+
+
+
     /* End of  Carousel*/
+
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+
+        .form-header {
+            font-size: 22px;
+            font-weight: bolder;
+        }
+
+        .text-div__para1 {
+            font-size: 22px;
+            font-weight: 900;
+            white-space: normal;
+        }
+
+        .text-div__para2 {
+            font-size: 16px;
+            font-weight: 900;
+
+        }
+
+        .header-text {
+            font-size: 22px;
+        }
+
+        .section2-text-head {
+            font-size: 22px;
+        }
+
+        .section2-text-para {
+            font-size: 16px;
+        }
+
+        .additional-features-head {
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+        .additional-features-para {
+            word-wrap: break-word;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+
+        .scrolling-wrapper {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            padding: 30px 0px;
+            justify-content: flex-start;
+        }
+
+        .hideBigScreen {
+            display: none;
+        }
+
+        .hideSmallScreen {
+            display: block;
+        }
+
+        .section-2-div {
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 20px;
+            grid-row-gap: 0px;
+
+
+        }
+
+        .additional-features-img {
+            height: 50px;
+            padding-right: 10px;
+        }
+
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {}
+
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        .container {
+            width: 750px;
+        }
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        .container {
+            width: 970px;
+        }
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+        .container {
+            width: 1170px;
+        }
+    }
 </style>
 
 <!DOCTYPE html>
@@ -157,12 +339,15 @@
 </head>
 
 <body>
-    <div>
+    <div class='container'>
         <!-- Start of Header div -->
 
         <div class='header-div'>
-            <div>
+            <div class='hideSmallScreen'>
                 <img src="./images/1920x1713px_Mobile-Banner.jpg" alt="" class='mobile-header-image'>
+            </div>
+            <div class='hideBigScreen'>
+                <img src="./images/HINDI_New-Mah-TREO_Landing-PG_Header_Desktop.jpg" alt="" class='mobile-header-image'>
             </div>
             <div class='text-div'>
                 <p class='text-div__para1 primary-text-blue'>
@@ -180,50 +365,54 @@
         <!-- Start of Section 2  -->
 
         <div class='section-2 primary-background-blue pt10 pb10'>
-            <p class='tc pt10 pb10 secondary-background-dark primary-text-white bolder'>प्रमुख विशेषताएं</p>
+            <p class='tc pt10 pb10 secondary-background-dark primary-text-white bolder header-text'>प्रमुख विशेषताएं</p>
             <div class='section-2-div'>
-                <div>
+                <div class='section-2-imagediv'>
                     <img class='img-full pt10 pb10' src="./images/PerformanceFeat_1374x960px.png" alt="">
                 </div>
                 <div>
-                    <p class='tc bolder primary-text-white'>श्रेणीमें सर्वोत्तम परफॉर्मन्स</p>
-                    <p class='tc bold'>जबरदस्त ८kW की पावर और बेहतरीन ४२ Nm की खीचनेकी क्षमता ट्रीओको देती है कमाल का
+                    <p class='tc bolder primary-text-white section2-text-head'>श्रेणीमें सर्वोत्तम परफॉर्मन्स</p>
+                    <p class='tc bold section2-text-para'>जबरदस्त ८kW की पावर और बेहतरीन ४२ Nm की खीचनेकी क्षमता ट्रीओको
+                        देती है कमाल का
                         एक्सेलरेशन
                         १२.७o की चढ़ाई चढाने की क्षमतासे ट्रीओ बड़े से बड़ा फ्लाईओवर बेहद आसानीसे पार कर देता है</p>
                 </div>
             </div>
             <div class='section-2-div'>
-                <div>
+                <div class='section-2-imagediv'>
                     <img class='img-full pt10 pb10' src="./images/BatteryFeat_1374x960px.png" alt="">
                 </div>
                 <div>
-                    <p class='tc bolder primary-text-white'>एडवांस्ड लिथियम आयन टेक्नोलॉजी</p>
-                    <p class='tc bold'>ट्रीओ में जीरो-मेंटेनेंस लीथियम-आयन बैटरी की लाइफ 5 साल / 1,50,000 किमी से ज्यादा
+                    <p class='tc bolder primary-text-white section2-text-head'>एडवांस्ड लिथियम आयन टेक्नोलॉजी</p>
+                    <p class='tc bold section2-text-para'>ट्रीओ में जीरो-मेंटेनेंस लीथियम-आयन बैटरी की लाइफ 5 साल /
+                        1,50,000 किमी से ज्यादा
                         है</p>
                 </div>
             </div>
             <div class='section-2-div'>
-                <div>
+                <div class='section-2-imagediv'>
                     <img class='img-full pt10 pb10' src="./images/ChargingFeat_1374x960px.png" alt="">
                 </div>
                 <div>
-                    <p class='tc bolder primary-text-white'>बेहद आसान चार्जिंग</p>
-                    <p class='tc bold'>ट्रीओ एक चार्ज में १३० km चलता है I इसे चार्ज करना एक मोबाइल फ़ोन को चार्ज करने
+                    <p class='tc bolder primary-text-white section2-text-head'>बेहद आसान चार्जिंग</p>
+                    <p class='tc bold section2-text-para'>ट्रीओ एक चार्ज में १३० km चलता है I इसे चार्ज करना एक मोबाइल
+                        फ़ोन को चार्ज करने
                         जितना आसान है. आप इसे किसी भी १६-amp चार्जिंग पॉइण्टपे आसानीसे चार्ज कर सकते है. </p>
                 </div>
             </div>
             <div class='section-2-div'>
-                <div>
+                <div class='section-2-imagediv'>
                     <img class='img-full pt10 pb10' src="./images/ComfortFeat_1374x960px.png" alt="">
                 </div>
                 <div>
-                    <p class='tc bolder primary-text-white'>थकान से मुक्त आरामदायक सफर</p>
-                    <p class='tc bold'>इसमें क्लच और गियर बदलने की झंझटही नहीं है ये बनाता है आपके सफर को बिल्कुलही
+                    <p class='tc bolder primary-text-white section2-text-head'>थकान से मुक्त आरामदायक सफर</p>
+                    <p class='tc bold section2-text-para'>इसमें क्लच और गियर बदलने की झंझटही नहीं है ये बनाता है आपके
+                        सफर को बिल्कुलही
                         थकानरहित</p>
                 </div>
             </div>
 
-            <p class='tc pt10 pb10 secondary-background-dark primary-text-white bolder'>अतिरिक्त लाभ</p>
+            <p class='tc pt10 pb10 secondary-background-dark primary-text-white bolder header-text'>अतिरिक्त लाभ</p>
 
             <!-- Additional features  -->
 
@@ -232,7 +421,7 @@
                     <img class='additional-features-img' src="./images/MahindraBharosa_feat_500px.png" alt="">
                 </div>
                 <div>
-                    <p class='primary-text-white bolder'>महिंद्रा का भरोसा</p>
+                    <!-- <p class='primary-text-white bolder additional-features-head'>महिंद्रा का भरोसा</p> -->
                     <p class='additional-features-para'>ट्रीओ आता है ३ साल / ८०००० km की बेहतरीन वारंटी के साथ जिससे आप
                         रहें एकदम चिंतामुक्त.इसकी 5
                         साल/100,000 किमी की एक्सटेंडेड वारंटी भी है।</p>
@@ -279,7 +468,7 @@
         <!-- end of carousel -->
 
         <!-- Start of form  -->
-        <p class='tc pt10 pb10 primary-text-black bolder'>और जानकारी पाए</p>
+        <p class='tc pt10 pb10 primary-text-black bolder form-header'>और जानकारी पाए</p>
 
         <form class='pr10 pl10'>
             <p class='form-para'>
@@ -301,6 +490,10 @@
                 </div>
 
             </div>
+            <div class='button-div'>
+                <button class='submit-button tc'>Submit</button>
+            </div>
+
         </form>
         <!-- End of form -->
     </div>
